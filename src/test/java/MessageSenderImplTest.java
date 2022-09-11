@@ -116,5 +116,4 @@ class MessageSenderImplTest {
 
         Assertions.assertEquals(expected, actual);
     }
-
 }

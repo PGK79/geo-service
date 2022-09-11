@@ -1,7 +1,5 @@
 import org.junit.jupiter.api.*;
 import ru.netology.entity.Country;
-import ru.netology.entity.Location;
-import ru.netology.geo.GeoServiceImpl;
 import ru.netology.i18n.LocalizationServiceImpl;
 
 public class LocalizationServiceImplTest {
@@ -39,7 +37,6 @@ public class LocalizationServiceImplTest {
         String actual = sut.locale(argument);
 
         // then:
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
-
-    }
+}

@@ -3,8 +3,6 @@ import ru.netology.entity.Country;
 import ru.netology.entity.Location;
 import ru.netology.geo.GeoServiceImpl;
 
-import java.util.Arrays;
-
 public class GeoServiceImplTest {
 
     static GeoServiceImpl sut;
@@ -33,8 +31,9 @@ public class GeoServiceImplTest {
 
     @Test
     public void idIp_location_check() {
+
         // given:
-        final Location expected = new Location("New York", Country.USA, null,  0);
+        final Location expected = new Location("New York", Country.USA, null, 0);
         final String argument = "96.";
 
         // when:
